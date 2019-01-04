@@ -1,6 +1,5 @@
 package com.demo.utils;
 
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;
@@ -10,11 +9,6 @@ import java.util.Date;
  */
 @Component
 public class DemoUtil {
-
-
-
-
-
 
     //获取当前
     public void getDate(){
