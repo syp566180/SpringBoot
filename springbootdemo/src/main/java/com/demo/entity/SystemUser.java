@@ -23,4 +23,11 @@ public class SystemUser extends BaseEntity{
     public void setPwd(String pwd) {
         this.pwd = pwd;
     }
+
+
+    public String toString(){
+        return "{user = "+user+";pwd = "+pwd+"}";
+    }
+
+
 }
