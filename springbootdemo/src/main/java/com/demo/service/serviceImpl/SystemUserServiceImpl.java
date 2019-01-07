@@ -19,11 +19,12 @@ public class SystemUserServiceImpl implements SystemUserService{
 
 
     public int save(SystemUser systemUser){
-        systemUserDao.insert(systemUser);
-        return 1;
+       int i =  systemUserDao.insert(systemUser);
+        return i;
     }
 
     public List<SystemUser> findList(){
+        //return null;
         return systemUserDao.findList();
     }
 }

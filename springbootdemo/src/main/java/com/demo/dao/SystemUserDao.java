@@ -23,10 +23,10 @@ public interface SystemUserDao {
      * @param systemUser
      * @return
      */
-    @Insert("insert into tpbt_system_user(id, user, pwd) values (#{id}, #{user}, #{pwd})")
+    @Insert("INSERT INTO SPBT_SYSTEM_USER(ID, USER, PWD) values (#{id}, #{user}, #{pwd})")
     int insert(SystemUser systemUser);
 
 
-    @Select("select * from tpbt_system_user")
+    @Select("SELECT * FROM SPBT_SYSTEM_USER")
     List<SystemUser> findList();
 }

@@ -10,8 +10,8 @@ import redis.clients.jedis.JedisPoolConfig;
 @Configuration
 public class JedisClientSingle implements JedisClient{
 
-    @Autowired
-    private JedisPoolConfig jedisPool;
+//    @Autowired
+//    private JedisPoolConfig jedisPool;
 //
 //    @Override
 //    public String set(String key, String value) {
