@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -25,8 +26,13 @@ public class LoginController extends BaseController{
     @ResponseBody
     public Map<String, Object> index(SystemUser systemUser){
         System.out.println(systemUser.toString());
-        return successMsg();
+        Map<String,Object> map = new HashMap<>();
+        map.put("url","/system/jumpIndex");
+        return successMsg(map);
     }
 
-
+    @RequestMapping(value = "/jumpIndex")
+    public String jumpIndex(){
+        return "/index/index";
+    }
 }

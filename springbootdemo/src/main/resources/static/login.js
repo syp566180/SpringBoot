@@ -11,7 +11,7 @@ $(function() {// 初始化内容
             success: function (result) {
                 console.log(result);//打印服务端返回的数据(调试用)
                 if (result.resultCode == 0) {
-                    alert(result.resultMsg);
+                    window.location.href = result.resultData.url;
                 };
             },
             error : function() {
